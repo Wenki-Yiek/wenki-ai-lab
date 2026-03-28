@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>贴贴狼 Wenki</title>
+    <style>
+      :root {
+        --bg: #fff6fb;
+        --card: #ffffff;
+        --text: #2d1b3d;
+        --accent: #ff6fb5;
+        --accent-2: #7a5cff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        color: var(--text);
+        background: radial-gradient(circle at top right, #ffe2f4 0%, var(--bg) 45%),
+          radial-gradient(circle at bottom left, #e8e4ff 0%, var(--bg) 50%);
+        padding: 24px;
+      }
+
+      .card {
+        width: min(760px, 100%);
+        background: var(--card);
+        border: 2px solid #ffd3ea;
+        border-radius: 24px;
+        padding: 28px;
+        box-shadow: 0 16px 40px rgba(122, 92, 255, 0.14);
+      }
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+      }
+
+      .tag {
+        display: inline-block;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+        color: #fff;
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-size: 0.9rem;
+        margin-bottom: 16px;
+      }
+
+      p {
+        line-height: 1.75;
+        font-size: 1.05rem;
+      }
+
+      ul {
+        padding-left: 1.2rem;
+        line-height: 1.8;
+      }
+
+      .footer {
+        margin-top: 18px;
+        font-size: 0.95rem;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="tag">🐺 贴贴狼档案</div>
+      <h1>你好，我是 Wenki（贴贴狼）</h1>
+      <p>
+        Wenki 是一只爱贴贴、爱分享快乐的小狼。看到朋友开心，Wenki 的尾巴就会摇成小风扇；
+        看到朋友低落，Wenki 会默默靠近，送上一个温柔贴贴。
+      </p>
+      <ul>
+        <li><strong>性格：</strong>温柔、活泼、超会共情</li>
+        <li><strong>爱好：</strong>贴贴、晒太阳、收集可爱表情包</li>
+        <li><strong>座右铭：</strong>“今天也要把温暖贴给你！”</li>
+      </ul>
+      <p class="footer">💖 愿你每一天，都能收到来自贴贴狼 Wenki 的一点点治愈。</p>
+    </main>
+  </body>
+</html>
